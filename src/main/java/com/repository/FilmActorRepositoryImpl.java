@@ -2,6 +2,8 @@ package com.repository;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.model.entity.Actor;
 import com.model.entity.Film;
 
@@ -9,6 +11,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 
+@Repository
 @Transactional
 public class FilmActorRepositoryImpl implements FilmActorRepository {
 
