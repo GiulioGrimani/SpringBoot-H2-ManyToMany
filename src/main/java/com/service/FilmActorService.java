@@ -1,5 +1,9 @@
 package com.service;
 
+import java.util.List;
+
+import com.model.entity.Film;
+
 public interface FilmActorService {
 
     void insertFilmWithActors(Film film, List<Actor> actors);
