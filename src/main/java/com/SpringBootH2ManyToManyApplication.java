@@ -40,9 +40,9 @@ public class SpringBootH2ManyToManyApplication implements CommandLineRunner {
 		film.setTitle("FilmBello");
 		filmService.insertFilm(film);
 
-//		film.setFilmId(1);
-//		film.setTitle("FilmNonBello");
-//		filmService.updateFilm(film);
+		film.setFilmId(1);
+		film.setTitle("FilmNonBello");
+		filmService.updateFilm(film);
 	}
 
 }
