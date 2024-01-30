@@ -14,65 +14,65 @@ import jakarta.persistence.TransactionRequiredException;
 
 public class FilmServiceImpl implements FilmService {
 
-    @Autowired
-    FilmRepository fr;
+	@Autowired
+	FilmRepository fr;
 
-    Logger log = LoggerFactory.getLogger(this.getClass());
+	Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @Override
-    public void insertFilm(Film film) {
-        try {
-            fr.insertFilm(film);
-        } catch (IllegalArgumentException | TransactionRequiredException | EntityExistsException e) {
-            e.printStackTrace();
-            log.error("Error in insertFilm()");
-        }
-    }
+	@Override
+	public void insertFilm(Film film) {
+		try {
+			fr.insertFilm(film);
+		} catch (IllegalArgumentException | TransactionRequiredException | EntityExistsException e) {
+			e.printStackTrace();
+			log.error("Error in insertFilm()");
+		}
+	}
 
-    @Override
-    public void updateFilm(Film film) {
-        try {
-            fr.updateFilm(film);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.println("Error in updateFilm()");
-        }
-    }
+	@Override
+	public void updateFilm(Film film) {
+		try {
+			fr.updateFilm(film);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("Error in updateFilm()");
+		}
+	}
 
-    @Override
-    public void deleteFilm(Integer filmId) {
-        try {
-            fr.deleteFilm(filmId);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.println("Error in deleteFilm()");
-        }
-    }
+	@Override
+	public void deleteFilm(Integer filmId) {
+		try {
+			fr.deleteFilm(filmId);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.err.println("Error in deleteFilm()");
+		}
+	}
 
-    @Override
-    public Film getFilmById(Integer filmId) {
-        Film film = null;
-        try {
-            film = fr.getFilmById(filmId);
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-            System.err.println("Error in getFilmById()");
-        }
+	@Override
+	public Film getFilmById(Integer filmId) {
+		Film film = null;
+		try {
+			film = fr.getFilmById(filmId);
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+			System.err.println("Error in getFilmById()");
+		}
 
-        return film;
-    }
+		return film;
+	}
 
-    @Override
-    public List<Film> getAllFilms() {
-        List<Film> films = null;
-        try {
-            films = fr.getAllFilms();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-            System.err.println("Error in getAllFilms()");
-        }
+	@Override
+	public List<Film> getAllFilms() {
+		List<Film> films = null;
+		try {
+			films = fr.getAllFilms();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+			System.err.println("Error in getAllFilms()");
+		}
 
-        return films;
-    }
+		return films;
+	}
 
 }
