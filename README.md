@@ -18,5 +18,5 @@ None
 
 ## Launch
 
-Just import the project into your workspace and run it on local server
+Just import the project into your workspace and run it on local server!
 
