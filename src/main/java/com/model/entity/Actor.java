@@ -16,8 +16,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-// List<Film> getFilmsByActor(Integer actorId);
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
