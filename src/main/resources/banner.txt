@@ -1,0 +1,11 @@
+ _______ _______ _______ _______ 
+|\     /|\     /|\     /|\     /|
+| +---+ | +---+ | +---+ | +---+ |
+| |   | | |   | | |   | | |   | |
+| |C  | | |R  | | |U  | | |D  | |
+| +---+ | +---+ | +---+ | +---+ |
+|/_____\|/_____\|/_____\|/_____\|
+                                 
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
+H2 DBMS ${my.h2.browser.url}
