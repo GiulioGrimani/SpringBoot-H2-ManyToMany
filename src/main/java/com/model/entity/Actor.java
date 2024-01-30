@@ -23,7 +23,6 @@ import lombok.ToString;
 @ToString(exclude = "films")
 @Entity
 @NamedQueries({ @NamedQuery(name = "Actor.findAll", query = "SELECT a FROM Actor a"),
-		@NamedQuery(name = "Actor.findById", query = "SELECT a FROM Actor a WHERE a.actorId = :actorId"),
 		@NamedQuery(name = "Actor.findFilmsByActor", query = "SELECT a.films FROM Actor a WHERE actorId = :actorId")
 
 })

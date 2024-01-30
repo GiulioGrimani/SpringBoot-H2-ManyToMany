@@ -27,7 +27,6 @@ import lombok.ToString;
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Film.findAll", query = "SELECT f FROM Film f"),
-        @NamedQuery(name = "Film.findById", query = "SELECT f FROM Film f WHERE f.filmId = :filmId"),
         @NamedQuery(name = "Film.findActorsByFilm", query = "SELECT f.actors FROM Film f WHERE filmId = :filmId")
 })
 public class Film {
