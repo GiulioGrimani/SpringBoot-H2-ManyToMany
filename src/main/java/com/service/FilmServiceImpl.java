@@ -6,32 +6,52 @@ public class FilmServiceImpl implements FilmService {
 
     @Override
     public void insertFilm(Film film) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertFilm'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in insertFilm()");
+        }
     }
 
     @Override
     public void updateFilm(Film film) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateFilm'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in updateFilm()");
+        }
     }
 
     @Override
     public void deleteFilm(Integer filmId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteFilm'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in deleteFilm()");
+        }
     }
 
     @Override
     public Film getFilmById(Integer filmId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFilmById'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in getFilmById()");
+        }
     }
 
     @Override
     public List<Film> getAllFilms() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAllFilms'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in getAllFilms()");
+        }
     }
 
 }

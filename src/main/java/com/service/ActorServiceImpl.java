@@ -6,32 +6,52 @@ public class ActorServiceImpl implements ActorService {
 
     @Override
     public void insertActor(Actor actor) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertActor'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in insertActor()");
+        }
     }
 
     @Override
     public void updateActor(Actor actor) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'updateActor'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in updateActor()");
+        }
     }
 
     @Override
     public void deleteActor(Integer actorId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteActor'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in deleteActor()");
+        }
     }
 
     @Override
     public Actor getActorById(Integer actorId) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getActorById'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in getActorById()");
+        }
     }
 
     @Override
     public List<Actor> getAllActors() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAllActors'");
+        try {
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error in getAllActors()");
+        }
     }
 
 }
