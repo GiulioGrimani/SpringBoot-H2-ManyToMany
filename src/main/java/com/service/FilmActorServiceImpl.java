@@ -6,7 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.model.entity.Actor;
 import com.model.entity.Film;
+import com.repository.FilmActorRepository;
 
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.TransactionRequiredException;
@@ -55,9 +57,8 @@ public class FilmActorServiceImpl implements FilmActorService {
             actors = far.getActorsByFilm(filmId);
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
-            System.err.println("Error in getActorsByFilm()");
+            log.error("Error in getActorsByFilm()");
         }
-
         return actors;
     }
 
@@ -68,9 +69,8 @@ public class FilmActorServiceImpl implements FilmActorService {
             films = far.getFilmsByActor(actorId);
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
-            System.err.println("Error in getFilmsByActor()");
+            log.error("Error in getFilmsByActor()");
         }
-
         return films;
     }
 

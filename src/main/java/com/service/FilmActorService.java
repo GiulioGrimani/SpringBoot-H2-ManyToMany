@@ -2,6 +2,7 @@ package com.service;
 
 import java.util.List;
 
+import com.model.entity.Actor;
 import com.model.entity.Film;
 
 public interface FilmActorService {
