@@ -22,31 +22,30 @@ import lombok.ToString;
 @Getter
 @ToString(exclude = "films")
 @Entity
-@NamedQueries({
-        @NamedQuery(name = "Actor.findAll", query = "SELECT a FROM Actor a"),
-        @NamedQuery(name = "Actor.findFilmsByActor", query = "SELECT a.films FROM Actor a WHERE actorId = :actorId")
+@NamedQueries({ @NamedQuery(name = "Actor.findAll", query = "SELECT a FROM Actor a"),
+		@NamedQuery(name = "Actor.findFilmsByActor", query = "SELECT a.films FROM Actor a WHERE actorId = :actorId")
 
 })
 public class Actor {
 
-    @Column(name = "actor_id")
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer actorId;
+	@Column(name = "actor_id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer actorId;
 
-    @Column(name = "first_name")
-    private String firstName;
+	@Column(name = "first_name")
+	private String firstName;
 
-    @Column(name = "last_name")
-    private String lastName;
+	@Column(name = "last_name")
+	private String lastName;
 
-    // bi-directional many-to-many association to Film
-    @ManyToMany(mappedBy = "actors")
-    private List<Film> films;
+	// bi-directional many-to-many association to Film
+	@ManyToMany(mappedBy = "actors")
+	private List<Film> films;
 
-    public Actor(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+	public Actor(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 
 }
