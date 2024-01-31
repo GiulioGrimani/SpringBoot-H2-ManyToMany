@@ -18,7 +18,9 @@ import jakarta.annotation.Resource;
 
 @SpringBootApplication
 public class SpringBootH2ManyToManyApplication implements CommandLineRunner {
-
+	/*
+	 * prova
+	 */
 	@Autowired
 	private FilmService filmService;
 
